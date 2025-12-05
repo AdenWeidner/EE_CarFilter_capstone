@@ -8,6 +8,10 @@
 <style>
 html { scroll-behavior: smooth; }
 
+:root {
+  --icon-size: 30px;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -15,6 +19,14 @@ body {
   font-size: 20px;
   color: #111;
   line-height: 1.55;
+}
+
+/* Icon */
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  vertical-align: middle;
+  margin-right: 6px;
 }
 
 /* TOP STRIP + NAV */
@@ -170,15 +182,23 @@ footer {
 <div class="top-strip">
   <div>Northern Arizona University – Steve Sanghi College of Engineering</div>
   <nav>
-    <a href="./index.html">🏠 Home</a>
-    <a href="./design.html">⚙️ Experiment</a>
-    <a href="./progress.html">📈 Process</a>
-    <a href="./team.html" class="active">👥 Team</a>
+    <a href="./index.html">
+      <img src="images/home.png" alt="" class="icon"> Home
+    </a>
+    <a href="./design.html">
+      <img src="images/gear.png" alt="" class="icon"> Experiment
+    </a>
+    <a href="./progress.html">
+      <img src="images/graphup.png" alt="" class="icon"> Process
+    </a>
+    <a href="./team.html" class="active">
+      <img src="images/team.png" alt="" class="icon"> Team
+    </a>
   </nav>
 </div>
 
 <header>
-  <h1>Team & Resources</h1>
+  <h1>Team &amp; Resources</h1>
   <h2>Car Filter – Group 4</h2>
 </header>
 
@@ -186,8 +206,10 @@ footer {
 
   <!-- Team -->
   <section class="card">
-    <div class="card-title-bar">👥 Team</div>
-   
+    <div class="card-title-bar">
+      <img src="images/team.png" alt="" class="icon"> Team
+    </div>
+    
     <div class="team-grid">
       <div class="member-card">
         <img class="member-photo" src="images/aden-head.png" alt="Aden Weidner">
@@ -219,7 +241,9 @@ footer {
 
   <!-- Advisors -->
   <section class="card">
-    <div class="card-title-bar">🎓 Faculty & Advising</div>
+    <div class="card-title-bar">
+      <img src="images/cap.png" alt="" class="icon"> Faculty &amp; Advising
+    </div>
     <p>
       The team is supported by faculty and graduate mentors who provide technical oversight, safety guidance,
       and design review throughout the project.
@@ -232,7 +256,9 @@ footer {
 
   <!-- Project Resources -->
   <section class="card">
-    <div class="card-title-bar">📚 Project Resources</div>
+    <div class="card-title-bar">
+      <img src="images/earth.png" alt="" class="icon"> Project Resources
+    </div>
     <p>
       The Car Filter project draws upon:
     </p>
@@ -247,7 +273,9 @@ footer {
 
   <!-- Acknowledgements -->
   <section class="card">
-    <div class="card-title-bar">🙏 Acknowledgements</div>
+    <div class="card-title-bar">
+      <img src="images/hands.png" alt="" class="icon"> Acknowledgements
+    </div>
     <p>
       The team extends sincere appreciation to:
     </p>
@@ -260,18 +288,18 @@ footer {
         <strong>Steve Sanghi College of Engineering, Informatics, and Applied Sciences</strong> – for
         laboratory facilities, instrumentation, and administrative support.
       </li>
-     
     </ul>
-   
   </section>
 
   <!-- References at bottom, IEEE-like -->
   <section class="card">
-  <div class="card-title-bar">🔎 References</div>
-  <p>Selected references used in the analysis, design, and background research for Car Filter:</p>
-  <ol>
-    <li>
-      B. Bishop, “Background knowledge on construction of Van de Graaff generators,”
+    <div class="card-title-bar">
+      <img src="images/calender.png" alt="" class="icon"> References
+    </div>
+    <p>Selected references used in the analysis, design, and background research for Car Filter:</p>
+    <ol>
+      <li>
+        B. Bishop, “Background knowledge on construction of Van de Graaff generators,”
       <em>wrbishop.com</em>. [Online]. Available:
       <a href="https://wrbishop.com">https://wrbishop.com</a>. Accessed: Nov. 16, 2025.
     </li>
@@ -315,7 +343,6 @@ footer {
     </li>
   </ol>
 </section>
-
 
 </main>
 
