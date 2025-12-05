@@ -8,6 +8,10 @@
 <style>
 html { scroll-behavior: smooth; }
 
+:root {
+  --icon-size: 30px;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +19,14 @@ body {
   color: #111;
   font-size: 20px;
   line-height: 1.55;
+}
+
+/* Icon style */
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  vertical-align: middle;
+  margin-right: 6px;
 }
 
 /* TOP STRIP + NAV */
@@ -170,10 +182,18 @@ footer {
 <div class="top-strip">
   <div>Northern Arizona University – Steve Sanghi College of Engineering</div>
   <nav>
-    <a href="./index.html">🏠 Home</a>
-    <a href="./design.html" class="active">⚙️ Experiment</a>
-    <a href="./progress.html">📈 Process</a>
-    <a href="./team.html">👥 Team</a>
+    <a href="./index.html">
+      <img src="images/home.png" alt="" class="icon"> Home
+    </a>
+    <a href="./design.html" class="active">
+      <img src="images/gear.png" alt="" class="icon"> Experiment
+    </a>
+    <a href="./progress.html">
+      <img src="images/graphup.png" alt="" class="icon"> Process
+    </a>
+    <a href="./team.html">
+      <img src="images/team.png" alt="" class="icon"> Team
+    </a>
   </nav>
 </div>
 
@@ -192,7 +212,7 @@ footer {
       <!-- LEFT SIDE – the text block -->
       <div>
         <div class="card-title-bar">
-          📌 Phase I: Van de Graaff High-Voltage Evaluation
+          <img src="images/gear.png" alt="" class="icon"> Phase I: Van de Graaff High-Voltage Evaluation
         </div>
 
         <p>
@@ -222,7 +242,9 @@ footer {
 
   <!-- Limitations -->
   <section class="card">
-    <div class="card-title-bar">📉 Limitations of Open-Air VDG Dissociation</div>
+    <div class="card-title-bar">
+      <img src="images/graphdown.png" alt="" class="icon"> Limitations of Open-Air VDG Dissociation
+    </div>
     <p>
       Preliminary analysis and prior NAU work indicate that open-air VDG operation is not sufficient for meaningful
       CO₂ dissociation:
@@ -240,7 +262,9 @@ footer {
 
   <!-- Phase II Chamber -->
   <section class="card">
-    <div class="card-title-bar">🔥 Phase II: Controlled CO₂ Reaction Chamber</div>
+    <div class="card-title-bar">
+      <img src="images/fire.png" alt="" class="icon"> Phase II: Controlled CO₂ Reaction Chamber
+    </div>
     <p>
       The core of Phase II is a modular, heatable, pressure-regulated reaction chamber designed to address the
       limitations of open-air discharges.
@@ -249,7 +273,7 @@ footer {
     <ul>
       <li>High-temperature operation to reduce required bond-breaking energy</li>
       <li>Adjustable pressure to study Paschen behavior and plasma stability</li>
-      <li>Interchangeable and adjustable electrodes for rapid testing of power-delivery methods</li>
+     <li>Interchangeable and adjustable electrodes for rapid testing of power-delivery methods</li>
       <li>
         Modularity for future integration of Marx generators, RF or microwave excitation, and higher-current pulsed systems
       </li>
@@ -262,7 +286,9 @@ footer {
 
   <!-- Diagrams & Formulas -->
   <section class="card">
-    <div class="card-title-bar">📷 Experiment Diagrams & Formulas</div>
+    <div class="card-title-bar">
+      <img src="images/camera.png" alt="" class="icon"> Experiment Diagrams &amp; Formulas
+    </div>
     <p>
       Visuals help communicate how the system is arranged and what physics it targets. As more data and models
       become available, this section can grow with additional images.
@@ -283,11 +309,13 @@ footer {
     </div>
   </section>
 
-  <!-- Exploratory wavelength & safety -->
+  <!-- Safety standards -->
   <section class="card">
-    <div class="card-title-bar">📡Standards-Based Safety</div>
+    <div class="card-title-bar">
+      <img src="images/satellite.png" alt="" class="icon"> Standards-Based Safety
+    </div>
 
-    <h3>Standards, Safety & Compliance</h3>
+    <h3>Standards, Safety &amp; Compliance</h3>
     <p>
       The experimental design follows established engineering and laboratory safety standards, including:
     </p>
